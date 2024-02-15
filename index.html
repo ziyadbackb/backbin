@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BACKB - Leading Web Development Company in India</title>
+  <meta name="description"
+    content="BACKB is a leading web development company in India specializing in website development, web applications, and ecommerce solutions." />
+  <meta name="keywords"
+    content="web development, web development company, web development India, website development, web applications, ecommerce solutions" />
+  <meta name="author" content="BackB" />
+
+  <!-- Google Analytics Tracking Code -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_GA_TRACKING_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', '427829493');
+  </script>
+  <!-- End Google Analytics Tracking Code -->
+
+  <!-- Site Icon -->
+  <link rel="icon" href="./assets/logo/BackB Icon.webp" type="image/x-icon" />
+  <!-- End Site Icon -->
+
+  <!-- Add your additional meta tags and other code here -->
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bgGray: "#B5B7B8",
+            cardcolor: " rgba(255, 255, 255, 0.034);",
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+  <section class="container md:mt-[20px] mt-2  w-11/12  md:mx-auto mx-4">
+    <nav class="pt-1 pb-1   flex  justify-between">
+      <div class="flex items-center pt-2  md:p-0">
+        <a href="/index.html">
+
+          <img src="./assets/logo/company-logo.svg" alt="" class="h-[32px] w-[100px] md:h-[48px] md:w-[146px]" />
+        </a>
+      </div>
+      <!-- Burger Menu -->
+
+      <!-- <button id="menuButton" class="z-20 focus:outline-none">
+        <img src="./assets/logo/menu.svg" alt="Menu" class="md:w-[36px] md:h-[36px] w-6" id="menuIcon">
+      </button> -->
+
+    </nav>
+
+    <div id="menu" class="fixed top-0 right-0  h-full w-64 transform translate-x-full bg-black shadow-md z-10"
+      style="transition: transform 0.3s ease;">
+      <ul class="md:pt-[8rem] pt-[5rem] font-[ClashGrotesk-Regular]">
+        <li class="py-2 px-4 hover:bg-gray-700 rounded-lg mx-2 "><a href="/index.html"
+            class="block text-gray-300 border-b pb-1">Home</a></li>
+        <li class="py-2 px-4 hover:bg-gray-700 rounded-lg mx-2"><a href="/individual_service-page.html"
+            class="block text-gray-300 border-b pb-1">Service</a></li>
+        <li class="py-2 px-4 hover:bg-gray-700 rounded-lg mx-2"><a href="/brands.html"
+            class="block text-gray-300 border-b pb-1">Brands</a></li>
+        <li class="py-2 px-4 hover:bg-gray-700 rounded-lg mx-2"><a href="/ecommerce.html"
+            class="block text-gray-300 border-b pb-1">ECommerce</a></li>
+        <li class="py-2 px-4 hover:bg-gray-700 rounded-lg mx-2"><a href="/works-and-casestudies.html"
+            class="block text-gray-300 border-b pb-1">Works</a></li>
+        <li class="py-2 px-4 hover:bg-gray-700 rounded-lg mx-2"><a href="/contact-us.html"
+            class="block text-gray-300 border-b pb-1">Contact</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Hero Section -->
+  <section class="container mx-4 w-11/12 md:mx-auto md:mt-2 mt-4 items-start  md:p-0 p-0">
+    <header class="flex flex-col md:mt-5 mt-3 md:grid md:grid-cols-[3fr,1fr] gap-6 hero-section">
+      <div class="grid card  md:grid-cols-[2fr,4fr] lg:grid-cols-[2fr,2fr] py-0">
+        <div class="flex flex-col gap-2 md:gap-8 md:pl-20 xl:pl-20 pr-0 pt-10 pb-10 md:pt-20 md:pb-20">
+          <h1
+            class="head-h1 md:text-[82px] text-[36px] font-[ClashGrotesk-Regular] text-center sm:text-left ms-6 me-6 md:ms-0 md:me-0"">
+            Design Code & Develop
+          </h1>
+          <h3
+            class=" md:text-[28px] text-[16px] pt-3 md:pt-10 text-center md:text-left text-gray-200 lg:pr-10 md:pr-40
+            head-h3 font-extralight md:font-normal tracking-wide md:tracking-normal ms-6 me-6 md:ms-0 md:me-0">
+            The technical art of Problem Solving
+            </h3>
+            <div class="flex justify-center mt-4 md:justify-start">
+              <!-- <button
+                class="btn-primary lg:text-xl text-xl font-medium md:px-5 px-4 md:py-5 py-2 rounded-lg text-black">
+                Lets innovate together
+              </button> -->
+              <a href="https://wa.link/g81ncr" target="_blank" rel="noopener noreferrer">
+                <button
+                  class="border border-white rounded-full lg:text-xl text-base text-base font-medium md:px-3 px-3 md:py-3 py-3 font-extralight">
+                  Lets innovate together
+                </button>
+              </a>
+
+            </div>
+        </div>
+        <div class="hidden lg:flex justify-end w-full">
+          <!-- This image will be displayed on larger screens (lg and up) -->
+          <img src="./assets/images/headerimg.png" alt="" class="object-contain py-8 pt-20 pb-20"
+            style="width: 100%; height: 100%;" />
+        </div>
+        <div class="flex lg:hidden justify-end w-full">
+          <!-- This image will be displayed on smaller screens (less than lg) -->
+          <img src="./assets/images/herocircle.svg" alt="" class="object-contain py-8 pt-0 pb-0"
+            style="width: 100%; height: 100%;" />
+        </div>
+
+      </div>
+      <div class="grid grid-rows-[2fr,1fr] md:w-full   md:mx-auto  h-full gap-y-6">
+        <div
+          class="card flex flex-col justify-end px-10 pt-10 md:px-16 leading-[1rem] md:leading-[3rem] w-full  md:mx-0  font-[ClashGrotesk-Regular]">
+          <h2 class="text-center pb-8 md:pb-4 text-[2rem] md:text-[2.5rem] leading-none">Building a system </br>
+            Since
+            2019</h2>
+          <!-- <h2 class="text-center pb-5 text-[2rem] md:text-[2.5rem]">Since 2019</h2> -->
+          <img class="" src="./assets/images/Layer 13.png" alt="" />
+        </div>
+
+        <div class=" grid grid-cols-[1fr,1fr] md:gap-6 gap-3">
+          <div class="flex flex-col  gap-4 card lg:p-8 px-6 lg:px-16 p-5 rounded-xl font-[ClashGrotesk-Regular]">
+            <img src="./assets/logo/global.svg" alt="" class="w-10" />
+            <div>
+              <p class="lg:text-6xl text-4xl font-base">13+</p>
+              <p class="lg:text-3xl text-base font-light text-gray-400">Countries</p>
+            </div>
+          </div>
+          <div class="flex flex-col  gap-4 card lg:p-8 px-6 lg:px-16 p-5 rounded-xl font-[ClashGrotesk-Regular]">
+            <img src="./assets/logo/3square.svg" alt="" class="w-10" />
+            <div>
+              <p class="lg:text-6xl text-4xl font-base">400+</p>
+              <p class="lg:text-3xl text-base font-light text-gray-400">Projects</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </section>
+  <!-- Hero End Section -->
+
+
+  <!-- About Us Section -->
+  <section class="container mx-4 w-11/12 card md:mx-auto md:mt-8 mt-4 items-start  md:p-14 p-6">
+    <div class="flex justify-between mt-3">
+      <div class="md:text-[12px] text-[.5rem] text-gray-200  flex gap-2 items-center">
+        <div class="dot"></div>
+        <p class="tracking-widest">ABOUT US</p>
+      </div>
+      <div class="">
+        <p class="md:text-xs text-gray-400 text-[.5rem] hidden md:block uppercase tracking-widest">
+          ITS ALL ABOUT PEOPLE, WHO YOU ARE WITH
+        </p>
+      </div>
+    </div>
+    <div class=" grid md:grid-cols-[1fr,4fr] w-full md:gap-10 gap-5 md:pt-16 pt-2">
+      <div class="grid grid-rows-[3fr,2fr]">
+
+        <div class="w-10 h-10 flex justify-center items-center border border-gray-300 rounded-full hidden md:flex">
+          <img src="./assets/logo/arrow-down.svg" alt="" width="24" class="arrow-down" />
+        </div>
+
+        <div class="">
+          <p class="text-gray-300 lg:w-[12rem] hidden md:block text-[10px] uppercase mt-6 tracking-widest">
+            Tech pioneers forging global impact through passion and innovation
+          </p>
+        </div>
+      </div>
+
+      <div class="grid md:grid-rows-[3fr,2fr] gap-3 md:gap-0   ">
+        <div class="flex flex-col about-main md:text-[4.5rem] text-xl  head-h1 font-[ClashGrotesk-Regular] ">
+          <h1 class="h2-col md:text-[4.7rem] md:leading-[4.5rem] leading-[2.5rem] text-[2.7rem]">Innovative Tech
+            Journey:</h1>
+          <div class="h2 text-white md:text-[4.7rem] md:leading-[4.5rem] leading-[2.5rem] text-[2.7rem]">Passion-Driven
+            Start</div>
+          <div class="h2 text-white md:text-[4.7rem] md:leading-[4.5rem] leading-[2.5rem] text-[2.7rem]">from 2019</div>
+        </div>
+        <div class="">
+
+          <p
+            class="text-[#B5B7B8] md:pt-4 lg:pb-2 lg:text-[1.25rem] text-sm md:leading-[2rem] leading-[1.5rem] font-light">
+            Founded in 2019 by five friends driven by passion, our tech company
+            has rapidly evolved. We've expanded our innovative services to 13+
+            countries, successfully completing 400+ projects. From humble
+            beginnings to a global presence, we continue to shape the future
+            with cutting-edge solutions, creativity, and a commitment to
+            excellence.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- End About Us Section -->
+
+  <!-- What we do section -->
+  <section class="container mx-4 w-11/12 card md:p-16 p-6 md:mt-8 mt-6 md:mx-auto items-center">
+
+    <div class="grid md:grid-cols-[1fr,4fr] w-full gap-5 md:gap-10">
+
+      <div class="md:text-[12px] text-[.5rem] text-gray-200  flex gap-2 items-center">
+        <div class="dot"></div>
+        <p class="tracking-widest">WHAT WE DO</p>
+      </div>
+      <div class="flex flex-col overflow-y-scroll">
+        <div class="flex gap-3 ">
+          <button
+            class="tab-button active-tab md:text-sm text-[16px] font-normal  border border-gray-300 text-gray-200  md:px-4 py-1 px-6 md:py-2 rounded-full"
+            onclick="showTab('webDevTab', this)">
+            Technology
+          </button>
+          <button
+            class="tab-button md:text-sm text-[16px] font-normal  border border-gray-300 text-gray-200  md:px-4 py-0 px-6 md:py-2 rounded-full"
+            onclick="showTab('brandingTab', this)">
+            Branding
+          </button>
+          <button
+            class="tab-button md:text-sm text-[16px] font-normal  border border-gray-300 text-gray-200  md:px-4 py-0 px-6 md:py-2 rounded-full whitespace-nowrap"
+            onclick="showTab('appDevTab', this)">
+            Experience Design
+          </button>
+        </div>
+      </div>
+
+    </div>
+    <div class="grid lg:grid-cols-[1fr,4fr] w-full md:gap-10 mt-8 ">
+
+      <div class="md:w-10 h-10 flex justify-center items-center border border-gray-300 rounded-full hidden lg:flex">
+        <img src="./assets/logo/arrow-down.svg" alt="" width="24" class="arrow-down" />
+      </div>
+
+      <div class="tab-content flex flex-col" id="webDevTab">
+        <div class="md:flex gap-2 lg:gap-16">
+          <p class=" text-gray-400">01</p>
+          <div class="flex flex-col gap-4">
+            <div class="flex md:gap-2 items-center">
+              <h1 class="lg:text-7xl text-2xl text-light font-[ClashGrotesk-Regular]">Website</h1>
+              <button class="">
+                <img src="./assets/logo/arrow.svg" alt="" class="arrow-left" />
+              </button>
+            </div>
+            <ul class="md:text-xs text-[.6rem] text-gray-400 grid grid-cols-2 lg:flex lg:gap-3 gap-1 overflow-y-scroll">
+              <li>Web Application <span class="separator hidden md:inline"> |</span></li>
+              <li>Ecommerce<span class="separator hidden md:inline"> |</span></li>
+              <li>Corporate Websites<span class="separator hidden md:inline"> |</span></li>
+              <li>Portfolio Websites<span class="separator hidden md:inline"> |</span></li>
+              <li>CRM<span class="separator hidden md:inline"> |</span></li>
+              <li>CMS</li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-full border border-gray-400 opacity-50 mt-5 mb-5 md:mt-10 md:mb-10"></div>
+        <div class="md:flex gap-2 lg:gap-16">
+          <p class="text-gray-400">02</p>
+          <div class="flex flex-col gap-4">
+            <div class="flex gap-2 items-center">
+              <h1 class="lg:text-7xl text-2xl text-light font-[ClashGrotesk-Regular]">Mobile Apps</h1>
+              <button class="">
+                <img src="./assets/logo/arrow.svg" alt="" class="arrow-left" />
+              </button>
+            </div>
+            <ul class="md:text-xs text-[.6rem] text-gray-400 grid grid-cols-2 lg:flex lg:gap-3 gap-1">
+              <li>Food Delivery Application<span class="separator hidden md:inline"> |</span></li>
+              <li>ECommerce Application<span class="separator hidden md:inline"> |</span></li>
+              <li>Taxi Booking Application<span class="separator hidden md:inline"> |</span></li>
+              <li>Listing Application</li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-full border border-gray-400 opacity-50 mt-5 mb-5 md:mt-10 md:mb-10"></div>
+
+        <div class="md:flex gap-2 lg:gap-16">
+          <p class="text-gray-400">03</p>
+          <div class="flex flex-col gap-4">
+            <div class="flex gap-2 items-center">
+              <h1 class="lg:text-7xl text-2xl text-light font-[ClashGrotesk-Regular]">Ecommerce</h1>
+              <button class="">
+                <img src="./assets/logo/arrow.svg" alt="" class="arrow-left" />
+              </button>
+            </div>
+            <ul class="md:text-xs text-[.6rem] text-gray-400 grid grid-cols-2 lg:flex lg:gap-3 gap-1">
+              <li>Fashion and Apparel<span class="separator hidden md:inline"> |</span></li>
+              <li>Electronics<span class="separator hidden md:inline"> |</span></li>
+              <li>Health and Beauty<span class="separator hidden md:inline"> |</span></li>
+              <li>Sports and Fitness<span class="separator hidden md:inline"> |</span></li>
+              <li>Digital Products</li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-full border border-gray-400 opacity-50 mt-5 mb-5 md:mt-10 md:mb-10"></div>
+
+        <div class="md:flex gap-2 lg:gap-16">
+          <p class="text-gray-400">04</p>
+          <div class="flex flex-col gap-4">
+            <div class="flex gap-2 items-center">
+              <h1 class="lg:text-7xl text-2xl text-light font-[ClashGrotesk-Regular]">Cloud Services</h1>
+              <button class="">
+                <img src="./assets/logo/arrow.svg" alt="" class="arrow-left" />
+              </button>
+            </div>
+            <ul class="md:text-xs text-[.6rem] text-gray-400 grid grid-cols-2 lg:flex lg:gap-3 gap-1">
+              <li>Cloud Consulting<span class="separator hidden md:inline"> |</span></li>
+              <li>Cloud Hosting<span class="separator hidden md:inline"> |</span></li>
+              <li>Cloud Migration<span class="separator hidden md:inline"> |</span></li>
+              <li>Database Services<span class="separator hidden md:inline"> |</span></li>
+              <li>Backup Configuration</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Tab content 02 -->
+      <div class="tab-content flex flex-col" id="appDevTab" style="display: none">
+
+        <div class="md:flex gap-2 lg:gap-16">
+          <p class=" text-gray-400">01</p>
+          <div class="flex flex-col gap-4">
+            <div class="flex gap-2 items-center">
+              <h1 class="lg:text-7xl text-2xl text-light font-[ClashGrotesk-Regular]">UI/UX</h1>
+              <button class="">
+                <img src="./assets/logo/arrow.svg" alt="" class="arrow-left" />
+              </button>
+            </div>
+            <ul class="md:text-xs text-[.6rem] text-gray-400 grid grid-cols-2 lg:flex lg:gap-3 gap-1">
+              <li>UI<span class="separator hidden md:inline"> |</span></li>
+              <li>UX<span class="separator hidden md:inline"> |</span></li>
+              <li>Cross-Platform Exp.<span class="separator hidden md:inline"> |</span></li>
+              <li>UI/UX Consulting<span class="separator hidden md:inline"> |</span></li>
+              <li>Design System</li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-full border border-gray-400 opacity-50 mt-5 mb-5 md:mt-10 md:mb-10"></div>
+
+        <div class="md:flex gap-2 lg:gap-16">
+          <p class="text-gray-400">02</p>
+          <div class="flex flex-col gap-4">
+            <div class="flex gap-2 items-center">
+              <h1 class="lg:text-7xl text-2xl text-light font-[ClashGrotesk-Regular]">Website Design</h1>
+              <button class="">
+                <img src="./assets/logo/arrow.svg" alt="" class="arrow-left" />
+              </button>
+            </div>
+            <ul class="md:text-xs text-[.6rem] text-gray-400 grid grid-cols-2 lg:flex lg:gap-3 gap-1">
+              <li>Ecommerce Web Design<span class="separator hidden md:inline"> |</span></li>
+              <li>Corporate Web Design<span class="separator hidden md:inline"> |</span></li>
+              <li>Custom Web Design<span class="separator hidden md:inline"> |</span></li>
+              <li>Website Revamp</li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-full border border-gray-400 opacity-50 mt-5 mb-5 md:mt-10 md:mb-10"></div>
+
+        <div class="md:flex gap-2 lg:gap-16">
+          <p class="text-gray-400">03</p>
+          <div class="flex flex-col gap-4">
+            <div class="flex gap-2 items-center">
+              <h1 class="lg:text-7xl text-2xl text-light font-[ClashGrotesk-Regular]">Dashboards</h1>
+              <button class="">
+                <img src="./assets/logo/arrow.svg" alt="" class="arrow-left" />
+              </button>
+            </div>
+            <ul class="md:text-xs text-[.6rem] text-gray-400 grid grid-cols-2 lg:flex lg:gap-3 gap-1">
+              <li>CRM<span class="separator hidden md:inline"> |</span></li>
+              <li>CMS<span class="separator hidden md:inline"> |</span></li>
+              <li>ERP<span class="separator hidden md:inline"> |</span></li>
+              <li>Admin Panel<span class="separator hidden md:inline"> |</span></li>
+              <li>Web Application</li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-full border border-gray-400 opacity-50 mt-5 mb-5 md:mt-10 md:mb-10"></div>
+
+        <div class="md:flex gap-2 lg:gap-16">
+          <p class="text-gray-400">04</p>
+          <div class="flex flex-col gap-4">
+            <div class="flex gap-2 items-center">
+              <h1 class="lg:text-7xl text-2xl text-light font-[ClashGrotesk-Regular]">Ecommerce</h1>
+              <button class="">
+                <img src="./assets/logo/arrow.svg" alt="" class="arrow-left" />
+              </button>
+            </div>
+            <ul class="md:text-xs text-[.6rem] text-gray-400 grid grid-cols-2 lg:flex lg:gap-3 gap-1">
+              <li>Ecommerce Web Design<span class="separator hidden md:inline"> |</span></li>
+              <li>Ecommerce App Design<span class="separator hidden md:inline"> |</span></li>
+              <li>Ecommerce PWA<span class="separator hidden md:inline"> |</span></li>
+              <li>Ecommerce Revamp</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Tab Content 03 -->
+      <div class="tab-content flex flex-col " id="brandingTab" style="display: none">
+
+        <div class="md:flex gap-2 lg:gap-16">
+          <p class=" text-gray-400">01</p>
+          <div class="flex flex-col gap-4">
+            <div class="flex gap-2 items-center">
+              <h1 class="lg:text-7xl text-2xl text-light font-[ClashGrotesk-Regular]">Brand Consulting</h1>
+              <button class="">
+                <img src="./assets/logo/arrow.svg" alt="" class="arrow-left" />
+              </button>
+            </div>
+            <ul class="md:text-xs text-[.6rem] text-gray-400 grid grid-cols-2 lg:flex lg:gap-3 gap-1">
+              <li>Brand Strategy<span class="separator hidden md:inline"> |</span></li>
+              <li>Brand Communication<span class="separator hidden md:inline"> |</span></li>
+              <li>Brand Revitalization<span class="separator hidden md:inline"> |</span></li>
+              <li>Market Research<span class="separator hidden md:inline"> |</span></li>
+              <li>Brand Experience</li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-full border border-gray-400 opacity-50 mt-5 mb-5 md:mt-10 md:mb-10"></div>
+
+        <div class="md:flex gap-2 lg:gap-16">
+          <p class="text-gray-400">02</p>
+          <div class="flex flex-col gap-4">
+            <div class="flex gap-2 items-center">
+              <h1 class="lg:text-7xl text-2xl text-light font-[ClashGrotesk-Regular]">Brannd Identity</h1>
+              <button class="">
+                <img src="./assets/logo/arrow.svg" alt="" class="arrow-left" />
+              </button>
+            </div>
+            <ul class="md:text-xs text-[.6rem] text-gray-400 grid grid-cols-2 lg:flex lg:gap-3 gap-1">
+              <li>Logo Design<span class="separator hidden md:inline"> |</span></li>
+              <li>Visual Style Dev.<span class="separator hidden md:inline"> |</span></li>
+              <li>Typography Guides<span class="separator hidden md:inline"> |</span></li>
+              <li>Color Palette<span class="separator hidden md:inline"> |</span></li>
+              <li>Iconography Creation</li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-full border border-gray-400 opacity-50 mt-5 mb-5 md:mt-10 md:mb-10"></div>
+
+        <div class="md:flex gap-2 lg:gap-16">
+          <p class="text-gray-400">03</p>
+          <div class="flex flex-col gap-4">
+            <div class="flex gap-2 items-center">
+              <h1 class="lg:text-7xl text-2xl text-light font-[ClashGrotesk-Regular]">Logo Design</h1>
+              <button class="">
+                <img src="./assets/logo/arrow.svg" alt="" class="arrow-left" />
+              </button>
+            </div>
+            <ul class="md:text-xs text-[.6rem] text-gray-400 grid grid-cols-2 lg:flex lg:gap-3 gap-1">
+              <li>Conceptual Logo<span class="separator hidden md:inline"> |</span></li>
+              <li>Minimalist Logo<span class="separator hidden md:inline"> |</span></li>
+              <li>Landmark Logo<span class="separator hidden md:inline"> |</span></li>
+              <li>Embedded Logo<span class="separator hidden md:inline"> |</span></li>
+              <li>Abstract Logo</li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-full border border-gray-400 opacity-50 mt-5 mb-5 md:mt-10 md:mb-10"></div>
+
+        <div class="md:flex gap-2 lg:gap-16">
+          <p class="text-gray-400">04</p>
+          <div class="flex flex-col gap-4">
+            <div class="flex gap-2 items-center">
+              <h1 class="lg:text-7xl text-2xl text-light font-[ClashGrotesk-Regular]">Brand Collateral</h1>
+              <button class="">
+                <img src="./assets/logo/arrow.svg" alt="" class="arrow-left" />
+              </button>
+            </div>
+            <ul class="md:text-xs text-[.6rem] text-gray-400 grid grid-cols-2 lg:flex lg:gap-3 gap-1">
+              <li>Business Card<span class="separator hidden md:inline"> |</span></li>
+              <li>Letterhead & Stationery<span class="separator hidden md:inline"> |</span></li>
+              <li>Brochure & Flyer<span class="separator hidden md:inline"> |</span></li>
+              <li>Packaging<span class="separator hidden md:inline"> |</span></li>
+              <li>Brand Guidelines Docs.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </section>
+
+  <!-- Ends What we do section -->
+
+  <section class="w-11/12 md:mx-auto mx-4 container md:mt-8 mt-6  card md:p-14 p-6 ">
+    <div class="flex justify-between  ">
+      <div class="md:text-[12px] text-[.5rem] text-gray-200  flex gap-2 items-center">
+        <div class="dot"></div>
+        <p class="tracking-widest">CASE STUDIES</p>
+      </div>
+      <p class="md:text-xs text-gray-400 text-[.5rem] hidden md:block uppercase tracking-widest">
+        BY OUR creative team</p>
+    </div>
+    <div class="grid lg:grid-cols-[1fr,3fr] xl:grid-cols-[1fr,5fr] md:pt-12 pt-6">
+      <div class="w-10 h-10 flex justify-center items-center border border-gray-300 rounded-full hidden md:flex">
+        <img src="./assets/logo/arrow-down.svg" alt="" width="24" class="arrow-down" />
+      </div>
+      <div class="lg:grid lg:grid-cols-2  ">
+        <div class="md:leading-[5.5rem] leading-[2.5rem] font-[ClashGrotesk-Regular]">
+          <h2 class="h2-color md:text-[5.5rem] text-[2.2rem] font-medium">Our Works</h2>
+          <h2 class="h2  md:text-[4.7rem] text-[2.2rem]">& Case Studies</h2>
+          <a href="/works-and-casestudies.html" class="    ">
+            <div class="flex relative gap-0">
+              <a href="https://wa.link/g81ncr" target="_blank" rel="noopener noreferrer">
+                <div class="pt-6 md:pt-1">VIEW WORKS</div>
+              </a>
+              <!-- <img src="./assets/logo/arrow-send.svg" alt="view" class="" /> -->
+              <div class="w-[7rem] border-b bottom-[5%] md:bottom-[30%] absolute border-gray-300"></div>
+            </div>
+          </a>
+        </div>
+        <div class="flex justify-center">
+          <p class="lg:text-[1.25rem] leading-[2rem] md:pl-10 lg:max-w-[26rem] text-gray-400 font-light">
+            Founded in 2019 by five friends driven by passion, our tech company
+            has rapidly evolved. We've expanded our innovative services to 13+
+            countries, successfully completing 400+ projects
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex  justify-around  xl:gap-4 mt-6 gap-3`">
+      <div class="flex flex-col gap-4 me-1">
+        <img src="./assets/images/Rectangle 6.png" alt="image1" />
+        <div class="lg:px-5  flex flex-col  ">
+          <p class="lg:text-3xl md:text-md text-sm">Posh Heights Realty</p>
+          <p class="md:text-[1.1rem] md:pt-1 text-[.6rem] text-zinc-600 font-extralight">Portfolio Website</p>
+        </div>
+      </div>
+      <div class="flex flex-col gap-4 ms-1">
+        <img src="./assets/images/Rectangle 7.png" alt="image1" />
+        <div class="lg:px-5 flex flex-col ">
+          <p class="lg:text-3xl text-sm md:text-md">Al Ras Sanitaryware</p>
+          <p class="md:text-[1.1rem] md:pt-1 text-[.6rem] text-zinc-600 font-extralight">Portfolio Website</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- End of  Case studies -->
+
+  <section class="w-11/12 container md:mx-auto mx-4 my-6 md:py-14   card md:p-10 md:p-5 p-6">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide flex items-center justify-center">
+          <img src="./assets/logo/client-logo/VI.png" class="md:h-[2rem] h-[1.5rem]" alt="slide" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/logo/client-logo/ccg.svg" alt="" class="h-[2rem] h-[1.5rem]" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/logo/client-logo/DohaCollege.png" alt="" class="h-[2rem] h-[1.5rem]" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/logo/client-logo/Allyou.png" alt="" class="h-[2rem] h-[1.5rem]" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/logo/client-logo/VI.png" alt="" class="h-[2rem] h-[1.5rem]" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/logo/client-logo/ccg.svg" alt="" class="h-[2rem] h-[1.5rem]" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/logo/client-logo/ccg.svg" alt="" class="h-[2rem] h-[1.5rem]" />
+        </div>
+      </div>
+      <!-- If we need pagination -->
+    </div>
+  </section>
+
+  <!-- Footer Section Start Point -->
+
+  <div class="mx-auto w-full py-6  bg-black  ">
+    <div class="swiper2">
+      <div class="swiper-wrapper font-6xl">
+        <div class="swiper-slide">
+          <h1 class="lg:text-8xl text-3xl font-black">
+            DO SOMETHING DIFFRENT
+          </h1>
+        </div>
+        <div class="swiper-slide">
+          <h1 class="lg:text-8xl text-3xl font-black">
+            DO SOMETHING DIFFRENT
+          </h1>
+        </div>
+        <div class="swiper-slide">
+          <h1 class="lg:text-8xl text-3xl font-black">
+            DO SOMETHING DIFFRENT
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class=" bg-white  md:pb-2 md:pt-6 pt-3 ">
+    <div class="text-xs md:text-[12px]  text-gray-600 mt-3 md:px-[68px] md:p-6 p-2 flex md:gap-2 items-center">
+      <div class="dot text-black md:bg-black "></div>
+      <p class="uppercase tracking-widest">
+        Share your creative ideas with us and get back beautiful designs that
+        impress and engage.
+      </p>
+    </div>
+    <div class="flex gap-1 items-center md:px-[68px] p-4 md:py-14 py-6 md:gap-10 ">
+      <div class="border-b-2 border-black flex pb-4 md:px-0">
+
+        <h1 class="md:font-semibold md:text-[4.8rem] text-[3.2rem] leading-[3rem] font-semibold text-black md:flex">
+          <a href="https://wa.link/g81ncr" target="_blank" rel="noopener noreferrer">
+            Tap to Start a <span class="hidden md:inline">&nbsp;</span> project
+          </a>
+        </h1>
+        <img src="./assets/logo/send.svg" alt="" class="hidden w-8 md:w-[5rem] mb-10 md:mb-0 ml-2" />
+      </div>
+
+    </div>
+    <hr class="mt-5 border-t border-gray-400">
+    <div class="flex justify-between md:pt-8 pt-4 md:px-14 px-6 pb-6">
+
+      <div class="">
+        <div class="text-black  text-[.6rem] md:text-[18px] text-gray-600 font-extralight">Designed and Developed by
+          <span class="text-gray-800 text-[.8rem] md:text-[1.3rem] font-semibold"> DREAMERS
+            ❤️</span>
+        </div>
+      </div>
+      <div class="">
+
+        <div class="flex md:gap-4 gap-1 text-black ">
+          <img class="md:w-6 w-3 " src="./assets/logo/brand-logo/whatsapp.svg" alt="gg" />
+          <img class="md:w-6 w-3" src="./assets/logo/brand-logo/instagram.svg" alt="" />
+          <img class="md:w-6 w-3" src="./assets/logo/brand-logo/linkedin.png" alt="" />
+          <img class="md:w-6 w-3" src="./assets/logo/brand-logo/behance.png" alt="" />
+          <img class="md:w-6 w-3" src="./assets/logo/brand-logo/dribble.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- swiper cdn js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    const swiper = new Swiper(".swiper", {
+      // Optional parameters
+      slidesPerView: 6, // Number of slides per view (adjust as needed)
+      spaceBetween: 10, // Space between each slide
+      loop: true, // Enable looping
+
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+
+      autoplay: {
+        delay: 0, // Delay between slides in milliseconds (adjust as needed)
+        disableOnInteraction: false, // Continue sliding even after user interaction
+      },
+
+      speed: 9000,
+
+      // Navigation arrows
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+
+      // And if we need scrollbar
+      scrollbar: {
+        el: ".swiper-scrollbar",
+      },
+    });
+
+    const swiper2 = new Swiper(".swiper2", {
+      // Optional parameters
+      slidesPerView: 1, // Number of slides per view (adjust as needed)
+      spaceBetween: 20, // Space between each slide
+      loop: true, // Enable looping
+
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+
+      autoplay: {
+        delay: 0, // Delay between slides in milliseconds (adjust as needed)
+        disableOnInteraction: false, // Continue sliding even after user interaction
+      },
+
+      speed: 20000,
+
+      // Navigation arrows
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+
+      // And if we need scrollbar
+      scrollbar: {
+        el: ".swiper-scrollbar",
+      },
+    });
+  </script>
+
+  <script>
+    function showTab(tabId, button) {
+      var tabs = document.querySelectorAll(".tab-content");
+      tabs.forEach(function (tab) {
+        tab.style.display = "none";
+      });
+
+
+      var buttons = document.querySelectorAll(".tab-button");
+      buttons.forEach(function (btn) {
+        btn.classList.remove("active-tab");
+      });
+
+
+      document.getElementById(tabId).style.display = "flex";
+
+
+      button.classList.add("active-tab");
+    }
+
+    //hamburger
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const menuButton = document.getElementById('menuButton');
+      const menu = document.getElementById('menu');
+      const menuIcon = document.getElementById('menuIcon');
+
+      let isMenuOpen = false;
+
+      function openMenu() {
+        menu.style.transform = 'translateX(0%)';
+        menuIcon.src = './assets/logo/close.svg';
+        isMenuOpen = true;
+      }
+
+      function closeMenu() {
+        menu.style.transform = 'translateX(100%)';
+        menuIcon.src = './assets/logo/menu.svg';
+        isMenuOpen = false;
+      }
+
+      menuButton.addEventListener('click', function () {
+        if (isMenuOpen) {
+          closeMenu();
+        } else {
+          openMenu();
+        }
+      });
+
+      window.addEventListener('scroll', function () {
+        if (window.scrollY > 50) {
+          closeMenu();
+        }
+      });
+    });
+
+
+  </script>
+</body>
+
+</html>

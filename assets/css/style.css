@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&family=Roboto:wght@100;300;400;500&family=Rubik:ital,wght@0,600;0,700;1,500&display=swap");
+@import url('css/clash-grotesk.css');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+@font-face {
+  font-family: 'clashgrotesk'; 
+  src: url('../ClashGrotesk_Complete/ClashGrotesk_Complete/Fonts/OTF') format('woff2')
+
+}
+
+@font-face {
+  font-family: 'ClashGrotesk-Variable';
+  src: url('../ClashGrotesk_Complete/ClashGrotesk_Complete/Fonts/OTF/ClashGrotesk-Regular.otf') format('woff2'),
+       url('../fonts/ClashGrotesk-Variable.woff') format('woff'),
+       url('../fonts/ClashGrotesk-Variable.ttf') format('truetype');
+       font-weight: 200 700;
+       font-display: swap;
+       font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'ClashGrotesk-Extralight';
+  src: url('../ClashGrotesk_Complete//ClashGrotesk_Complete/Fonts/WEB/fonts/ClashGrotesk-Semibold.woff2') format('woff2'),
+       url('../ClashGrotesk_Complete/ClashGrotesk_Complete/Fonts/OTF/ClashGrotesk-Regular.otf') format('woff'),
+       url('../fonts/ClashGrotesk-Extralight.ttf') format('truetype');
+       font-weight: 200;
+       font-display: swap;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashGrotesk-Regular';
+  src: url('../ClashGrotesk_Complete/ClashGrotesk_Complete/Fonts/OTF/ClashGrotesk-Regular.otf') format('woff2'),
+       url('../fonts/ClashGrotesk-Regular.woff') format('woff'),
+       url('../fonts/ClashGrotesk-Regular.ttf') format('truetype');
+       font-weight: 400;
+       font-display: swap;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashGrotesk';
+  src: url('../ClashGrotesk_Complete/ClashGrotesk_Complete/Fonts/WEB/fonts/ClashGrotesk-Bold.eot') format('woff2'),
+       url('../fonts/ClashGrotesk-Semibold.woff') format('woff'),
+       url('../fonts/ClashGrotesk-Semibold.ttf') format('truetype');
+       font-weight:200 400 500 600;
+       font-display: swap;
+       font-style: normal;
+}
+
+
+:root {
+  --color-bg-primary: #0A0E11;
+  --color-bg-primary-varient: linear-gradient(
+    86deg,
+    #35dbff -6.84%,
+    #36aeff 57.13%,
+    #3683ff 118.48%
+  );
+  --text-color-primary: #fff;
+  --text-color-primary-varient: #f0f3f6;
+  --grey-bg-color: #b5b7b8;
+  --border-radius: 24px;
+  --card-bg: #161C22;
+  --card_small: 12;
+  --card_medium: 14;
+  --card_large: 26;
+}
+
+
+
+body {
+  background-color: #0A0E11;
+  font-family: "Manrope", sans-serif;
+    color: #fff;
+  line-height: 1.0;
+ 
+  
+}
+
+/* .about-main{
+  line-height: .2rem;
+} */
+
+section {
+  margin-bottom: 14px;
+}
+
+.company-logo-nav {
+  width: 130px;
+  
+}
+
+.card {
+  background-color: #161C22;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.head-h1 {
+  background: linear-gradient(
+    86deg,
+    #35dbff -6.84%,
+    #36aeff 57.13%,
+    #3683ff 158.48%
+  );
+  font-size: 98px;
+  font-weight: 500;
+  background-clip: text;
+  color: transparent;
+  line-height: 90%;
+}
+
+
+/* .home-head-section-1-container {
+  width: 60%;
+  padding: 50px 0 50px 50px;
+  align-items: center;
+} */
+
+.home-head-section-2-container {
+  width: 40%;
+}
+
+
+
+.home-head-section-2 {
+  padding: 60px;
+  padding-bottom: 0%;
+  width: 100%;
+  align-items: center;
+}
+
+.btn-primary {
+  background: linear-gradient(
+    86deg,
+    #2bbada -6.84%,
+    #2c9be4 57.13%,
+    #2879fd 118.48%
+  );
+}
+
+.home-head-btn {
+  padding: 16px 40px;
+  border-radius: 72px;
+  color: black;
+}
+
+/* end header */
+
+/* ABOUT US */
+.h2-color {
+  background: linear-gradient(
+    86deg,
+    #35dbff -6.84%,
+    #36aeff 57.13%,
+    #3683ff 118.48%
+  );
+  font-size: 58px;
+  font-weight: 400;
+  background-clip: text;
+  color: transparent;
+ 
+}
+
+.h2 {
+  font-size: 58px;
+  font-weight: 400;
+}
+
+.arrow-left {
+  width: 120px;
+  height: 30px;
+}
+
+
+/* works and case studies page */
+
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card-image:nth-child(odd) {
+  grid-row-end: span var(--card_small);
+}
+.card-image:nth-child(even) {
+  grid-row-end: span var(--card_medium);
+}
+
+/* End works and case studies page */
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: white;
+
+}
+
+
+.swiper, .swiper2 {
+  width: 100%;
+  overflow: hidden;
+  
+}
+
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1%;
+}
+
+
+.active-tab {
+  background-color: #cecece; 
+  color: black !important;
+}
+
+/* .caseStudy{
+  line-height: 2.4rem;
+} */
+
+.lineheightmd{
+  line-height: 1.3rem;
+}
+
+
+/* separator for homepage items */
+.separator {
+  display: inline-block;
+  margin-left: 8px; 
+}
+
+.swiper-slide img {
+  max-width: 100%; /* Set maximum width to 100% */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+@media only screen and (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+  }
+  .headerimg {
+    display: none;
+  }
+
+  .home-head-section-1-container {
+    width: 100%;
+    
+  }
+  
+  .home-head-section-2-container {
+    width: 100%;
+  }
+
+  .head-h1 {
+    font-size: 48px;
+  }
+  .head-h3 {
+    font-size: 20px;
+    line-height: 1.1;
+    padding: 0%;
+  }
+ .grid-container{
+  display: grid;
+  grid-template-columns: 30% 70%;
+ }
+  .arrow-down {
+    display: none;
+  }
+  .h2-color,
+  .h2 {
+    font-size: 30px;
+  }
+
+  .what-we-do {
+    flex-direction: column;
+  }
+  .arrow-left {
+    width: 80px;
+  }
+  .company-logo-nav {
+    width: 120px;
+  }
+  .arrow-left {
+    width: 60px;
+    height: 15px;
+  }
+}
+
+
+ /* Custom Scroll Bar */
+
+::-webkit-scrollbar {
+  display: none;
+
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 4px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
