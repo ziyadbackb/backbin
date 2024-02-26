@@ -1,74 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Works and Case Studies</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-        <!-- swiper js cdn -->
-        <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-      />
-   
-    <link rel="stylesheet" href="/assets/css/style.css" />
-  </head>
-  <body>
-    <section class="ontainer w-11/12 mt-2 md:mt-6 mx-4 md:mx-auto">
-      <nav class="pt-4 pb-4   flex  justify-between">
-        <div class="flex items-center p-2  md:p-0">
-          <a href="/index.html">
 
-            <img
-              src="./assets/logo/company-logo.svg"
-              alt=""
-              class="md:w-[10rem] w-[5rem]"
-            />
-          </a>
-        </div>
-        <button id="menuButton" class="z-20 focus:outline-none">
-          <img src="./assets/logo/hamburger.svg" alt="Menu" class="md:w-[48px] md:h-[48px] w-6" id="menuIcon">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Works & Case Studies - BackB | Leading Web Development Company in India</title>
+  <meta name="description"
+    content="BACKB is a leading web development company in India specializing in website development, web applications, and ecommerce solutions." />
+  <meta name="keywords"
+    content="web development, web development company, web development India, website development, web applications, ecommerce solutions" />
+  <meta name="author" content="BackB" />
+  <meta property="og:image" content="./assets/logo/company-logo.svg">
+  <meta property="og:url" content="https://backb.in/">
+  <meta property="og:type" content="website">
+
+  <!-- Google Analytics Tracking Code -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155001691-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-155001691-3');
+  </script>
+
+  <!-- End Google Analytics Tracking Code -->
+
+  <!-- Hotjar Tracking Code for https://backb.in/ -->
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 3442914, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+
+  <!-- Site Icon -->
+  <link rel="icon" href="./assets/logo/BackB Icon.webp" type="image/x-icon" />
+  <!-- End Site Icon -->
+
+  <!-- Add your additional meta tags and other code here -->
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bgGray: "#B5B7B8",
+            cardcolor: " rgba(255, 255, 255, 0.034);",
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+  <section class="container md:mt-[20px] mt-2  w-11/12  md:mx-auto mx-4">
+    <nav class="pt-1 pb-1   flex  justify-between">
+      <div class="flex items-center pt-2  md:p-0">
+        <a href="/index.html">
+
+          <img src="./assets/logo/company-logo.svg" alt="" class="h-[32px] w-[100px] md:h-[48px] md:w-[146px]" />
+        </a>
+      </div>
+      <!-- Burger Menu -->
+
+      <button id="menuButton" class="z-20 focus:outline-none">
+        <img src="./assets/logo/menu.svg" alt="Menu" class="md:w-[36px] md:h-[36px] w-6" id="menuIcon">
       </button>
-      </nav>
 
-      <div id="menu" class="fixed top-0 right-0  h-full w-64 transform translate-x-full bg-black shadow-md z-10" style="transition: transform 0.3s ease;">
-        <ul class="md:pt-[8rem] pt-[5rem] font-[ClashGrotesk-Regular]">
-            <li class="py-2 px-4 hover:bg-gray-700 rounded-lg mx-2 "><a href="/index.html" class="block text-gray-300 border-b pb-1">Home</a></li>
-            <li class="py-2 px-4 hover:bg-gray-700 rounded-lg mx-2"><a href="/individual_service-page.html" class="block text-gray-300 border-b pb-1">Service</a></li>
-            <li class="py-2 px-4 hover:bg-gray-700 rounded-lg mx-2"><a href="/brands.html" class="block text-gray-300 border-b pb-1">Brands</a></li>
-            <li class="py-2 px-4 hover:bg-gray-700 rounded-lg mx-2"><a href="/ecommerce.html" class="block text-gray-300 border-b pb-1">ECommerce</a></li>
-            <li class="py-2 px-4 hover:bg-gray-700 rounded-lg mx-2"><a href="/works-and-casestudies.html" class="block text-gray-300 border-b pb-1">Works</a></li>
-            <li class="py-2 px-4 hover:bg-gray-700 rounded-lg mx-2"><a href="/contact-us.html" class="block text-gray-300 border-b pb-1">Contact</a></li>
-        </ul>
+    </nav>
+
+    <div id="menu" class="fixed top-0 right-0  h-full w-64 transform translate-x-full bg-black shadow-md z-10"
+      style="transition: transform 0.3s ease;">
+      <ul class="md:pt-[8rem] pt-[5rem] font-[ClashGrotesk-Regular]">
+        <li class="py-2 px-4 hover:bg-gray-700 rounded-lg mx-2 "><a href="/index.html"
+            class="block text-gray-300 border-b pb-1">Home</a></li>
+        <li class="py-2 px-4 hover:bg-gray-700 rounded-lg mx-2"><a href="/individual_service-page.html"
+            class="block text-gray-300 border-b pb-1">Service</a></li>
+        <li class="py-2 px-4 hover:bg-gray-700 rounded-lg mx-2"><a href="/brands.html"
+            class="block text-gray-300 border-b pb-1">Brands</a></li>
+        <li class="py-2 px-4 hover:bg-gray-700 rounded-lg mx-2"><a href="/ecommerce.html"
+            class="block text-gray-300 border-b pb-1">ECommerce</a></li>
+        <li class="py-2 px-4 hover:bg-gray-700 rounded-lg mx-2"><a href="/works-and-casestudies.html"
+            class="block text-gray-300 border-b pb-1">Works</a></li>
+        <li class="py-2 px-4 hover:bg-gray-700 rounded-lg mx-2"><a href="/contact-us.html"
+            class="block text-gray-300 border-b pb-1">Contact</a></li>
+      </ul>
     </div>
-    
-    
-    
-    
+  </section>
 
-
-    
-    </section>
-
-    <section class="container md:mt-14 mt-6 w-11/12 mx-4 md:mx-auto">
-      <div class=" ">
-        <div class="md:text-[.8rem] text-[.6rem] text-gray-300  flex gap-2 items-center">
-          <div class="dot"></div>
-          <div class="">WORKS & CASE STUDIES</div>
-        </div>
-        <section
-        class="lg:grid grid-cols-2 w-11/12 container mt-10   lg:mt-10 items-center md:p-3 text-sm text-gray-200 lg:p-0"
-      >
+  <section class="container md:mt-14 mt-6 w-11/12 mx-4 md:mx-auto">
+    <div class=" ">
+      <div class="md:text-[12px] text-[.5rem] text-gray-200  flex gap-2 items-center">
+        <div class="dot"></div>
+        <p class="tracking-widest">WORKS & CASE STUDIES</p>
+      </div>
+      <section
+        class="lg:grid grid-cols-2 w-11/12 container mt-10   lg:mt-10 items-center md:p-3 text-sm text-gray-200 lg:p-0">
         <div class="   h-full items-end  grid  ">
           <div class="md:leading-[4rem] leading-[3rem] font-[ClashGrotesk-Regular]">
 
-            <div class="h2-color text-[3rem] md:text-[5rem] flex">Our Works</div>
+            <div class="h2-color md:text-[4.7rem] md:leading-[4.5rem] leading-[2.5rem] text-[2.7rem] flex">Our Works
+            </div>
             <div class="md:text-[4.5rem] text-[3rem] font-extralight"> & Case Studies</div>
           </div>
         </div>
 
         <div class="flex flex-col md:pl-32 mt-10 md:mt-5  gap-4 lg:w-[46rem] xl:w-[42rem]">
-          <p class="lg:text-[1.4rem] lg:leading-[1.7rem] leading-[1.2rem] text-sm text-gray-400  font-light  ">
+          <p
+            class="text-[#B5B7B8] md:pt-4 lg:pb-2 lg:text-[1.25rem] text-sm md:leading-[2rem] leading-[1.5rem] font-light">
             Founded in 2019 by five friends driven by passion, our tech company
             has rapidly evolved. We've expanded our innovative services to 13+
             countries, successfully completing 400+ projects.
@@ -79,246 +133,273 @@
           </div>
         </div>
       </section>
+    </div>
+  </section>
+
+  <section class="container w-11/12 mx-4 md:mx-auto h-full py-6 lg:mt-16">
+    <div class="grid xl:grid-cols-4 md:grid-cols-3 gap-y-[1rem] gap-4">
+      <div class="card-image">
+        <img src="./assets/images/card3.png" alt="" class="" />
+        <p class="pt-3 md:pb-5 md:px-4 px-4 text-md text-gray-200">Posh Heights Reality3</p>
       </div>
-    </section>
+      <div class="card-image">
+        <img src="./assets/images/card3.png" alt="" class="" />
+        <p class="pt-3 md:pb-5 md:px-4 px-4 text-md text-gray-200">Posh Heights Reality3</p>
+      </div>
+      <div class="card-image">
+        <img src="./assets/images/card3.png" alt="" class="" />
+        <p class="pt-3 md:pb-5 md:px-4 px-4 text-md text-gray-200">Posh Heights Reality3</p>
+      </div>
+      <div class="card-image">
+        <img src="./assets/images/card3.png" alt="" class="" />
+        <p class="pt-3 md:pb-5 md:px-4 px-4 text-md text-gray-200">Posh Heights Reality3</p>
+      </div>
+      <div class="card-image">
+        <img src="./assets/images/card3.png" alt="" class="" />
+        <p class="pt-3 md:pb-5 md:px-4 px-4 text-md text-gray-200">Posh Heights Reality3</p>
+      </div>
+      <div class="card-image">
+        <img src="./assets/images/card3.png" alt="" class="" />
+        <p class="pt-3 md:pb-5 md:px-4 px-4 text-md text-gray-200">Posh Heights Reality3</p>
+      </div>
+      <div class="card-image">
+        <img src="./assets/images/card3.png" alt="" class="" />
+        <p class="pt-3 md:pb-5 md:px-4 px-4 text-md text-gray-200">Posh Heights Reality3</p>
+      </div>
+      <div class="card-image">
+        <img src="./assets/images/card3.png" alt="" class="" />
+        <p class="pt-3 md:pb-5 md:px-4 px-4 text-md text-gray-200">Posh Heights Reality3</p>
+      </div>
+    </div>
+  </section>
 
-    <section class="container w-11/12 mx-4 md:mx-auto h-full py-6 lg:mt-16">
-      <div class="grid xl:grid-cols-4 md:grid-cols-3 gap-y-[3rem] gap-4">
-        <div class="card-image rounded-[5%]">
-          <img src="./assets/images/card1.png" alt="" class="object-cover rounded-[5%]" />
-          <p class="p-3 text-md text-gray-200">Posh Heights Reality</p>
+
+  <!-- Footer Section Start Point -->
+  <!-- brand logos footer -->
+  <section class="w-11/12 container md:mx-auto mx-4 my-6 md:py-14   card md:p-10 md:p-5 p-6">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide flex items-center justify-center">
+          <img src="./assets/logo/client-logo/VI.png" class="md:h-[2rem] h-[1.5rem]" alt="slide" />
         </div>
-        <div class="card-image ">
-          <img src="./assets/images/card2.png" alt="" class="object-cover rounded-[5%] " />
-          <p class="p-3 text-md text-gray-200">Posh Heights Reality2</p>
+        <div class="swiper-slide">
+          <img src="./assets/logo/client-logo/DohaCollege.png" alt="" class="h-[2rem] h-[1.5rem]" />
         </div>
-        <div class="card-image">
-          <img src="./assets/images/card3.png" alt="" class="object-cover rounded-[5%] " />
-          <p class="p-3 text-md text-gray-200">Posh Heights Reality3</p>
+        <div class="swiper-slide">
+          <img src="./assets/logo/client-logo/Allyou.png" alt="" class="h-[2rem] h-[1.5rem]" />
         </div>
-        <div class="card-image">
-          <img src="./assets/images/card5.png" alt="" class="object-cover rounded-[5%]" />
-          <p class="p-3 text-md text-gray-200">Posh Heights Realit</p>
-        </div>
-        <div class="card-image">
-          <img src="./assets/images/card4.png" alt="" class="object-cover rounded-[5%]" />
-          <p class="p-3 text-md text-gray-200">Posh Heights Realityjkl</p>
-        </div>
-        <div class="card-image">
-          <img src="./assets/images/card6.png" alt="" class="object-cover rounded-[5%]" />
-          <p class="p-3 text-md text-gray-200">Posh Heights Reality</p>
-        </div>
-        <div class="card-image">
-          <img src="./assets/images/card7.png" alt="" class="object-cover rounded-[5%]" />
-          <p class="p-3 text-md text-gray-200">Posh Heights Realityjjj</p>
-        </div>
-        <div class="card-image">
-          <img src="./assets/images/card8.png" alt="" class="object-cover rounded-[5%]" />
-          <p class="p-3 text-md text-gray-200">Posh Heights Realitykkk</p>
-        </div>
-        <div class="card-image">
-          <img src="./assets/images/card9.png" alt="" class="object-cover rounded-[5%]" />
-          <p class="p-3 text-md text-gray-200">Posh Heights Realitylll</p>
-        </div>
-        <div class="card-image">
-          <img src="./assets/images/card10.png" alt="" class="object-cover rounded-[5%]" />
-          <p class="p-3 text-md text-gray-200">Posh Heights Realityjjj</p>
-        </div>
-        <div class="card-image">
-          <img src="./assets/images/card11.png" alt="" class="object-cover rounded-[5%]" />
-          <p class="p-3 text-md text-gray-200">Posh Heights Reality</p>
-        </div>
-        <div class="card-image">
-          <img src="./assets/images/card12.png" alt="" class="object-cover rounded-[5%] " />
-          <p class="p-3 text-md text-gray-200">Posh Heights Reality</p>
+        <div class="swiper-slide">
+          <img src="./assets/logo/client-logo/ccg.svg" alt="" class="h-[2rem] h-[1.5rem]" />
         </div>
       </div>
-    </section>
-        <!-- Footer Section Start Point -->
-        <section class="w-11/12 container md:mx-auto mx-4 my-6 md:py-14   card md:p-10 md:p-5 p-4">
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide flex items-center justify-center">
-                <img src="./assets/logo/client-logo/VI.png" class="md:h-[2rem] h-[1.5rem]" alt="slide"/>
-              </div>
-              <div class="swiper-slide">
-                <img src="./assets/logo/client-logo/ccg.svg" alt="" class="h-[2rem] h-[1.5rem]" />
-              </div>
-              <div class="swiper-slide">
-                <img src="./assets/logo/client-logo/DohaCollege.png" alt="" class="h-[2rem] h-[1.5rem]" />
-              </div>
-              <div class="swiper-slide">
-                <img src="./assets/logo/client-logo/Allyou.png" alt="" class="h-[2rem] h-[1.5rem]" />
-              </div>
-              <div class="swiper-slide">
-                <img src="./assets/logo/client-logo/VI.png" alt="" class="h-[2rem] h-[1.5rem]"/>
-              </div>
-              <div class="swiper-slide">
-                <img src="./assets/logo/client-logo/ccg.svg" alt="" class="h-[2rem] h-[1.5rem]" />
-              </div>
-              <div class="swiper-slide">
-                <img src="./assets/logo/client-logo/ccg.svg" alt="" class="h-[2rem] h-[1.5rem]" />
-              </div>
-            </div>
-            <!-- If we need pagination -->
-          </div>
-        </section>
-    
-         <!-- Footer Section Start Point -->
-    
-        <div class="mx-auto w-full py-10  bg-black  ">
-          <div class="swiper2">
-            <div class="swiper-wrapper font-6xl">
-              <div class="swiper-slide">
-                <h1 class="lg:text-8xl text-2xl font-medium">
-                  DO SOMETHING DIFFRENT
-                </h1>
-              </div>
-              <div class="swiper-slide">
-                <h1 class="lg:text-8xl text-2xl font-medium">
-                  DO SOMETHING DIFFRENT
-                </h1>
-              </div>
-              <div class="swiper-slide">
-                <h1 class="lg:text-8xl text-2xl font-medium">
-                  DO SOMETHING DIFFRENT
-                </h1>
-              </div>
-            </div>
-          </div>
+      <!-- If we need pagination -->
+    </div>
+  </section>
+
+  <!-- Footer Section Start Point -->
+
+  <div class="mx-auto w-full py-6  bg-black  ">
+    <div class="swiper2">
+      <div class="swiper-wrapper font-6xl">
+        <div class="swiper-slide">
+          <h1 class="lg:text-8xl text-3xl font-black whitespace-nowrap">
+            DO SOMETHING DIFFRENT
+          </h1>
         </div>
-    
-        <footer class=" bg-white  md:pb-2 md:pt-6 pt-3 ">
-          <div class="text-xs md:text-[12px]  text-gray-600 mt-3 md:px-[68px] md:p-6 p-2 flex md:gap-2 items-center">
-            <div class="dot text-black md:bg-black "></div>
-            <p class="uppercase ">
-              Share your creative ideas with us and get back beautiful designs that
-              impress and engage.
-            </p>
-          </div>
-          <div class="flex gap-1 items-center md:px-[68px] p-4 md:py-14 py-6 md:gap-10 ">
-            <div class="border-b-2 border-black flex pb-4 md:px-0">
-    
-              <h1 class=" md:font-semibold md:text-[4.8rem] text-[3.2rem] leading-[3rem] font-semibold text-black md:flex  ">Lets Start a  &nbsp; <div>
-                project
-              </div>
-                   </h1>
-              <img src="./assets/logo/send.svg" alt="" class=" w-8 md:w-[5rem] mb-10 md:mb-0" />
-            </div>
-        
-          </div>
-          <hr class="mt-5 border-t border-gray-400">
-                <div class="flex justify-between md:pt-8 pt-4 md:px-14 px-6 pb-6">
-    
-            <div class="">
-              <div class="text-black  text-[.6rem] md:text-[18px] text-gray-600">Designed and Developed by <span class="text-gray-800 text-[.8rem] md:text-[1.3rem] font-semibold"> Dreamers ❤️</span> </div>
-            </div>
-            <div class="">
-    
-              <div class="flex md:gap-4 gap-1 text-black ">
-                <img class="md:w-6 w-3 " src="./assets/logo/brand-logo/whatsapp.svg"  alt="gg" />
-                <img class="md:w-6 w-3" src="./assets/logo/brand-logo/instagram.svg" alt="" />
-                <img class="md:w-6 w-3" src="./assets/logo/brand-logo/linkedin.png" alt="" />
-                <img class="md:w-6 w-3" src="./assets/logo/brand-logo/behance.png" alt="" />
-                <img class="md:w-6 w-3" src="./assets/logo/brand-logo/dribble.png" alt="" />
-              </div>
-            </div>
-          </div>
-        </footer>
-         <!-- Swiper Js -->
-             <!-- swiper cdn js -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
-         <script>
-          const swiper = new Swiper(".swiper", {
-            // Optional parameters
-            slidesPerView: 5, // Number of slides per view (adjust as needed)
-            spaceBetween: 10, // Space between each slide
-            loop: true, // Enable looping
-    
-            pagination: {
-              el: ".swiper-pagination",
-              clickable: true,
-            },
-    
-            // Navigation arrows
-            navigation: {
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
-            },
-    
-            // And if we need scrollbar
-            scrollbar: {
-              el: ".swiper-scrollbar",
-            },
-          });
-    
-          const swiper2 = new Swiper(".swiper2", {
-            // Optional parameters
-            slidesPerView: 1, // Number of slides per view (adjust as needed)
-            spaceBetween: 20, // Space between each slide
-            loop: true, // Enable looping
-            pagination: {
-              el: ".swiper-pagination",
-              clickable: true,
-            },
-    
-            autoplay: {
-              delay: 0, // Delay between slides in milliseconds (adjust as needed)
-              disableOnInteraction: false, // Continue sliding even after user interaction
-            },
-    
-            speed: 20000,
-    
-            // Navigation arrows
-            navigation: {
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
-            },
-    
-            // And if we need scrollbar
-            scrollbar: {
-              el: ".swiper-scrollbar",
-            },
-          });
-        </script>
-<script>
-      //hamburger
-     
-      document.addEventListener('DOMContentLoaded', function () {
-    const menuButton = document.getElementById('menuButton');
-    const menu = document.getElementById('menu');
-    const menuIcon = document.getElementById('menuIcon');
+        <div class="swiper-slide">
+          <h1 class="lg:text-8xl text-3xl font-black whitespace-nowrap">
+            DO SOMETHING DIFFRENT
+          </h1>
+        </div>
+        <div class="swiper-slide">
+          <h1 class="lg:text-8xl text-3xl font-black whitespace-nowrap">
+            DO SOMETHING DIFFRENT
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    let isMenuOpen = false;
+  <footer class=" bg-white  md:pb-2 md:pt-6 pt-3 ">
+    <div class="text-xs md:text-[12px]  text-gray-600 mt-3 md:px-[68px] md:p-6 p-2 flex md:gap-2 items-center">
+      <div class="dot text-black md:bg-black "></div>
+      <p class="uppercase tracking-widest">
+        Share your creative ideas with us and get back beautiful designs that
+        impress and engage.
+      </p>
+    </div>
+    <div class="flex gap-1 items-center md:px-[68px] p-4 md:pt-0 pt-1 md:pb-14 pb-6 md:gap-10 ">
+      <div class="border-b-2 border-black flex pb-4 md:px-0">
 
-    function openMenu() {
+        <h1 class="h2-color md:font-black md:text-[4.8rem] text-[3.2rem font-black md:flex">
+          <a href="https://wa.link/g81ncr" target="_blank" rel="noopener noreferrer">
+            Tap to Start a<span class="hidden md:inline">&nbsp;</span> project
+          </a>
+        </h1>
+        <!-- <img src="./assets/logo/send.svg" alt="" class="hidden w-8 md:w-[5rem] mb-10 md:mb-0 ml-2" /> -->
+      </div>
+
+    </div>
+    <hr class="mt-5 border-t border-gray-400">
+    <div class="flex justify-between md:pt-8 pt-4 md:px-14 px-6 pb-6">
+      <div class="flex md:gap-4 gap-3 text-black">
+        <a href="https://api.whatsapp.com/send?phone=918075917260&text=Hi%2C%20Team%20BackB%20%F0%9F%98%8A"
+          target="_blank" rel="noopener noreferrer">
+          <img class="md:w-6 w-4" src="./assets/logo/brand-logo/whatsapp.svg" alt="WhatsApp" />
+        </a>
+        <a href="https://www.instagram.com/backb.in/" target="_blank" rel="noopener noreferrer">
+          <img class="md:w-6 w-4" src="./assets/logo/brand-logo/instagram.svg" alt="WhatsApp" />
+        </a>
+        <a href="https://www.linkedin.com/company/backbsolutions/" target="_blank" rel="noopener noreferrer">
+          <img class="md:w-6 w-4" src="./assets/logo/brand-logo/linkedin.png" alt="WhatsApp" />
+        </a>
+        <a href="https://dribbble.com/backb" target="_blank" rel="noopener noreferrer">
+          <img class="md:w-6 w-4" src="./assets/logo/brand-logo/dribble.png" alt="WhatsApp" />
+        </a>
+      </div>
+    </div>
+  </footer>
+  <!-- swiper cdn js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    const swiper = new Swiper(".swiper", {
+      // Optional parameters
+      slidesPerView: 6, // Initial number of slides per view
+      spaceBetween: 4, // Space between each slide
+      loop: true, // Enable looping
+      speed: 9000, // Slide transition speed
+
+      // Pagination
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+
+      // Scrollbar
+      scrollbar: {
+        el: ".swiper-scrollbar",
+      },
+
+      // AutoPlay
+      autoplay: {
+        delay: 0, // Delay between slides in milliseconds
+        disableOnInteraction: false, // Continue sliding even after user interaction
+      },
+
+      // Responsive breakpoints
+      breakpoints: {
+        // When window width is <= 768px (tablet screens)
+        420: {
+          slidesPerView: 2, // Display 2 slides per view
+          spaceBetween: 10, // Space between each slide
+        },
+        // When window width is > 768px (laptop and desktop screens)
+        421: {
+          slidesPerView: 6, // Display 6 slides per view
+          spaceBetween: 4, // Space between each slide
+        },
+      },
+    });
+
+
+
+    const swiper2 = new Swiper(".swiper2", {
+      // Optional parameters
+      slidesPerView: 1, // Number of slides per view (adjust as needed)
+      spaceBetween: 20, // Space between each slide
+      loop: true, // Enable looping
+
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+
+      autoplay: {
+        delay: 0, // Delay between slides in milliseconds (adjust as needed)
+        disableOnInteraction: false, // Continue sliding even after user interaction
+      },
+
+      speed: 20000,
+
+      // Navigation arrows
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+
+      // And if we need scrollbar
+      scrollbar: {
+        el: ".swiper-scrollbar",
+      },
+    });
+  </script>
+
+  <script>
+    function showTab(tabId, button) {
+      var tabs = document.querySelectorAll(".tab-content");
+      tabs.forEach(function (tab) {
+        tab.style.display = "none";
+      });
+
+
+      var buttons = document.querySelectorAll(".tab-button");
+      buttons.forEach(function (btn) {
+        btn.classList.remove("active-tab");
+      });
+
+
+      document.getElementById(tabId).style.display = "flex";
+
+
+      button.classList.add("active-tab");
+    }
+
+    //hamburger
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const menuButton = document.getElementById('menuButton');
+      const menu = document.getElementById('menu');
+      const menuIcon = document.getElementById('menuIcon');
+
+      let isMenuOpen = false;
+
+      function openMenu() {
         menu.style.transform = 'translateX(0%)';
         menuIcon.src = './assets/logo/close.svg';
-        isMenuOpen = true; 
-    }
+        isMenuOpen = true;
+      }
 
-    function closeMenu() {
+      function closeMenu() {
         menu.style.transform = 'translateX(100%)';
-        menuIcon.src = './assets/logo/hamburger.svg';
-        isMenuOpen = false; 
-    }
+        menuIcon.src = './assets/logo/menu.svg';
+        isMenuOpen = false;
+      }
 
-    menuButton.addEventListener('click', function () {
+      menuButton.addEventListener('click', function () {
         if (isMenuOpen) {
-            closeMenu();
+          closeMenu();
         } else {
-            openMenu();
+          openMenu();
         }
+      });
+
+      window.addEventListener('scroll', function () {
+        if (window.scrollY > 50) {
+          closeMenu();
+        }
+      });
     });
 
-    window.addEventListener('scroll', function () {
-        if (window.scrollY > 50) {
-            closeMenu();
-        }
-    });
-});
 
   </script>
-  </body>
+</body>
+
 </html>
